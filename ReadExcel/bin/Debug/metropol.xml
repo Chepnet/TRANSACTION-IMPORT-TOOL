@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetroPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+
+<api_code_description i:nil="true"/>
+
+<citizenship>Kenyan</citizenship>
+
+
+<clan nil="true"/>
+<date_of_birth>1994-12-24</date_of_birth>
+<date_of_death nil="true"/>
+<date_of_issue nil="true"/>
+<dob>1994-12-24</dob>
+<error nil="true"/>
+<error_message nil="true"/>
+<ethnic_group nil="true"/>
+<family nil="true"/>
+<fingerprint nil="true"/>
+<first_name>CHEPKIRUI</first_name>
+<gender>F</gender>
+<has_error>false</has_error>
+<id_number>31992886</id_number>
+<identity_number>31992886</identity_number>
+<identity_type>001</identity_type>
+<identity_type_id>0</identity_type_id>
+<ipaddress>192.168.139.8</ipaddress>
+<last_name>LANGAT</last_name>
+<occupation nil="true"/>
+<other_name>ZIPPORAH</other_name>
+<photo nil="true"/>
+<pin nil="true"/>
+<place_of_birth nil="true"/>
+<place_of_death nil="true"/>
+<place_of_live nil="true"/>
+<regoffice nil="true"/>
+<response>RestSharp.RestResponse</response>
+<serial_number>234842468</serial_number>
+<signature nil="true"/>
+<success>true</success>
+<surname>LANGAT</surname>
+<trx_id>39fb55be-ad65-47e7-ac97-bb424f6464f4</trx_id>
+</MetroPerson>

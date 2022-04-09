@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ServerName>62.12.115.223\SQLEXPRESS01</ServerName>
+  <DbName>KRBTRAINING</DbName>
+  <UserName>power</UserName>
+  <Password>thefuture</Password>
+  
+  <SMSPassword>3gRDXwpn+4Y=</SMSPassword>
+</Configuration>

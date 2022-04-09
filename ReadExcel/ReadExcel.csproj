@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABBC4CD2-D937-44D9-AB0D-B4F799721F2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReadExcel</RootNamespace>
+    <AssemblyName>ReadExcel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ObjectListView">
+      <HintPath>..\..\..\..\..\Downloads\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BackupService.cs" />
+    <Compile Include="Classes\Backupservicecopy.cs" />
+    <Compile Include="Classes\Banks.cs" />
+    <Compile Include="Classes\Bens.cs" />
+    <Compile Include="Classes\CopyLoan.cs" />
+    <Compile Include="Classes\FileImportFormat.cs" />
+    <Compile Include="Classes\GroupOfficial.cs" />
+    <Compile Include="Classes\ImportFileNames.cs" />
+    <Compile Include="Classes\Kin.cs" />
+    <Compile Include="Classes\Loan.cs" />
+    <Compile Include="Classes\LoanRepayments.cs" />
+    <Compile Include="Classes\Loans.cs" />
+    <Compile Include="Classes\LoanTypes.cs" />
+    <Compile Include="Classes\Member.cs" />
+    <Compile Include="Classes\MemberRegistration.cs" />
+    <Compile Include="Classes\payments.cs" />
+    <Compile Include="Classes\PayModes.cs" />
+    <Compile Include="Classes\ProductSetup.cs" />
+    <Compile Include="Classes\Receipt.cs" />
+    <Compile Include="Classes\Serials.cs" />
+    <Compile Include="Classes\ShareAndSavings.cs" />
+    <Compile Include="Classes\ShareTransactions.cs" />
+    <Compile Include="Classes\ShareTypes.cs" />
+    <Compile Include="frmBarabaramemberMigration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarabaramemberMigration.Designer.cs">
+      <DependentUpon>frmBarabaramemberMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportData.Designer.cs">
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportFileFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportFileFormat.Designer.cs">
+      <DependentUpon>frmImportFileFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKRBImportationTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKRBImportationTool.Designer.cs">
+      <DependentUpon>frmKRBImportationTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMigratemembersKRB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMigratemembersKRB.Designer.cs">
+      <DependentUpon>frmMigratemembersKRB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNascaMigration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNascaMigration.Designer.cs">
+      <DependentUpon>frmNascaMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchLoanTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchLoanTypes.Designer.cs">
+      <DependentUpon>frmSearchLoanTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchImportationOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchImportationOrder.Designer.cs">
+      <DependentUpon>frmSearchImportationOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchPayModes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchPayModes.Designer.cs">
+      <DependentUpon>frmSearchPayModes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchShareTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchShareTypes.Designer.cs">
+      <DependentUpon>frmSearchShareTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransationImportFileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransationImportFileName.Designer.cs">
+      <DependentUpon>frmTransationImportFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemData.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="DetectingChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetectingChanges.Designer.cs">
+      <DependentUpon>DetectingChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBens.Designer.cs">
+      <DependentUpon>frmBens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquityTransactions2018.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEquityTransactions2018.Designer.cs">
+      <DependentUpon>frmEquityTransactions2018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportLoanRepayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportLoanRepayments.Designer.cs">
+      <DependentUpon>frmImportLoanRepayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportLoans.Designer.cs">
+      <DependentUpon>frmImportLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportLoanTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportLoanTypes.Designer.cs">
+      <DependentUpon>frmImportLoanTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportMembers.Designer.cs">
+      <DependentUpon>frmImportMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportSharesAndDepositsTransctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportSharesAndDepositsTransctions.Designer.cs">
+      <DependentUpon>frmImportSharesAndDepositsTransctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMigrateMembersandshares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMigrateMembersandshares.Designer.cs">
+      <DependentUpon>frmMigrateMembersandshares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMowaso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMowaso.Designer.cs">
+      <DependentUpon>frmMowaso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReadExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadExcel.Designer.cs">
+      <DependentUpon>frmReadExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSunData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSunData.Designer.cs">
+      <DependentUpon>frmSunData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="frmMigrationMowasco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMigrationMowasco.Designer.cs">
+      <DependentUpon>frmMigrationMowasco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDImIGRATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDImIGRATION.Designer.cs">
+      <DependentUpon>MDImIGRATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windowsbackupservice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windowsbackupservice.Designer.cs">
+      <DependentUpon>Windowsbackupservice.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DetectingChanges.resx">
+      <DependentUpon>DetectingChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarabaramemberMigration.resx">
+      <DependentUpon>frmBarabaramemberMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEquityTransactions2018.resx">
+      <DependentUpon>frmEquityTransactions2018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportFileFormat.resx">
+      <DependentUpon>frmImportFileFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportLoanRepayments.resx">
+      <DependentUpon>frmImportLoanRepayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportLoans.resx">
+      <DependentUpon>frmImportLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportLoanTypes.resx">
+      <DependentUpon>frmImportLoanTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportMembers.resx">
+      <DependentUpon>frmImportMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportSharesAndDepositsTransctions.resx">
+      <DependentUpon>frmImportSharesAndDepositsTransctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKRBImportationTool.resx">
+      <DependentUpon>frmKRBImportationTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMigrateMembersandshares.resx">
+      <DependentUpon>frmMigrateMembersandshares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMigratemembersKRB.resx">
+      <DependentUpon>frmMigratemembersKRB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMigrationMowasco.resx">
+      <DependentUpon>frmMigrationMowasco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMowaso.resx">
+      <DependentUpon>frmMowaso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNascaMigration.resx">
+      <DependentUpon>frmNascaMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadExcel.resx">
+      <DependentUpon>frmReadExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchLoanTypes.resx">
+      <DependentUpon>frmSearchLoanTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchImportationOrder.resx">
+      <DependentUpon>frmSearchImportationOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchPayModes.resx">
+      <DependentUpon>frmSearchPayModes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchShareTypes.resx">
+      <DependentUpon>frmSearchShareTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSunData.resx">
+      <DependentUpon>frmSunData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransationImportFileName.resx">
+      <DependentUpon>frmTransationImportFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDImIGRATION.resx">
+      <DependentUpon>MDImIGRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Windowsbackupservice.resx">
+      <DependentUpon>Windowsbackupservice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
